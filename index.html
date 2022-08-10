@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/iconNotepad.png" sizes="32x32">
+    <title>Notepad</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!----------- Rainbow Color ----------->
+        <div id="bgColor" class=" mt-5 d-flex justify-content-center">
+            <div class="color" style="background-color: rgb(220, 160, 160 , 0.5);"></div>
+            <div class="color" style="background-color: rgb(224, 227, 167 , 0.5);"></div>
+            <div class="color" style="background-color: rgb(173, 224, 153 , 0.5);"></div>
+            <div class="color" style="background-color: rgb(106, 211, 221 , 0.5);"></div>
+            <div class="color" style="background-color: rgb(207, 156, 227, 0.5);"></div>
+            <div class="color" style="background-color: rgb(218, 112, 144 , 0.5);"></div>
+            <div class="color" style="background-color: rgb(255, 255, 255, 0.5);"></div>
+        </div>
+        <!--------------- Input Note ------------>
+        <div class="row justify-content-center mt-4 mb-5">
+            <input type="text" id="inputNote" class=" col-8 border-info mx-2 shadow" placeholder="New Note...">
+            <button id="addNote" class="btn text-center col-1 p-2 shadow "><i class="text-light fa fa-plus"></i>
+            </button>
+        </div>
+        <!--------------- New Note ------------->
+        <ul id="allNote"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
