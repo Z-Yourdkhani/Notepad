@@ -1,52 +1,93 @@
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  direction: rtl;
 }
-
+#message {
+  display: none;
+}
+#allNote li {
+  width: 100%;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 .color {
-    width: 25px;
-    height: 25px;
-    margin: 0 5px;
-    border-radius: 50%;
-    border: 1px solid #46abca;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 1px solid #46abca;
+  cursor: pointer;
 }
-
 .newNoteClass {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95%;
-    margin-bottom: 10px;
-    padding: 10px 25px;
-    overflow: auto;
-    text-align: right;
-    border-radius: 4px;
-    color: black;
-    font-size: 0.9rem;
-    background: linear-gradient(45deg, rgb(255, 0, 0, 0.4), rgb(255, 166, 1, 0.4), rgb(255, 255, 0, 0.4), rgb(0, 128, 0, 0.4), rgb(0, 0, 255, 0.4), rgb(76, 0, 130, 0.4), rgb(246, 135, 246, 0.4), rgb(255, 1, 1, 0.4));
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 10px 25px;
+  overflow: auto;
+  text-align: right;
+  border-radius: 4px;
+  color: black;
+  font-size: 0.9rem;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 0, 0, 0.4),
+    rgb(255, 166, 1, 0.4),
+    rgb(255, 255, 0, 0.4),
+    rgb(0, 128, 0, 0.4),
+    rgb(0, 0, 255, 0.4),
+    rgb(76, 0, 130, 0.4),
+    rgb(246, 135, 246, 0.4),
+    rgb(255, 1, 1, 0.4)
+  );
 }
-
 button {
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
 }
-
 input::placeholder {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
-
 input {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
-
-input[type=text] {
-    outline: none;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    border-image-slice: 1;
+input[type="text"] {
+  outline: none;
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
 }

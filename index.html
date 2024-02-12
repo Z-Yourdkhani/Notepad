@@ -16,7 +16,7 @@
     <div class="container">
 
         <!----------- Rainbow Color ----------->
-        <div id="bgColor" class=" mt-5 d-flex justify-content-center">
+        <div id="bgColor" class="mt-5 d-flex justify-content-center">
             <div class="color" style="background-color: rgb(220, 160, 160 , 0.5);"></div>
             <div class="color" style="background-color: rgb(224, 227, 167 , 0.5);"></div>
             <div class="color" style="background-color: rgb(173, 224, 153 , 0.5);"></div>
@@ -25,14 +25,23 @@
             <div class="color" style="background-color: rgb(218, 112, 144 , 0.5);"></div>
             <div class="color" style="background-color: rgb(255, 255, 255, 0.5);"></div>
         </div>
-        <!--------------- Input Note ------------>
-        <div class="row justify-content-center mt-4 mb-5">
-            <input type="text" id="inputNote" class=" col-8 border-info mx-2 shadow" placeholder="New Note...">
-            <button id="addNote" class="btn text-center col-1 p-2 shadow "><i class="text-light fa fa-plus"></i>
-            </button>
+
+        <div class="row justify-content-center align-items-center my-4">
+            <!--------------- Input Note ------------>
+            <div class="col-8 px-0">
+                <input type="text" id="inputNote" class="form-control border-info shadow-sm" placeholder="یادداشت جدید ...">
+            </div>
+            <div class="col-2 col-lg-1 px-0">
+                <button id="addNote" class="btn text-center w-100 shadow-sm"><i class="text-light fa fa-plus"></i></button>
+            </div>
+            <!----------------  Notes --------------->
+            <div class="col-10 col-lg-9 mt-4 px-0">
+                <p id="message" class="alert alert-danger text-center mb-3">
+                    لطفا متن مورد نظر خود را وارد کنید.
+                </p>
+                <ul id="allNote" class="px-0"></ul>
+            </div>
         </div>
-        <!--------------- New Note ------------->
-        <ul id="allNote"></ul>
     </div>
 
     <script src="js/script.js"></script>
