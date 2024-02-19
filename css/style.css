@@ -1,14 +1,27 @@
+@font-face {
+  font-family: "dinar";
+  src: url("../font/Far_Dinar_Two_Medium.ttf");
+}
+
 body {
+  font-family: "dinar";
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   direction: rtl;
 }
+
 #message {
   display: none;
 }
 #allNote li {
   width: 100%;
+  /* text-shadow: 1px 1px 2px pink; */
+  text-shadow: #fc0 1px 0 10px;
+}
+#addNote,
+#inputNote {
+  height: 3rem;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -90,4 +103,78 @@ input[type="text"] {
     #fd1892 100%
   );
   border-image-slice: 1;
+}
+
+ul.pre-loader li {
+  color: #484848;
+  display: inline;
+  font-size: 2em;
+  animation: pre-load 3s linear infinite;
+}
+
+@keyframes pre-load {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+
+  20% {
+    color: #484848;
+    text-shadow: none;
+  }
+
+  40% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+  }
+
+  60% {
+    color: #484848;
+    text-shadow: none;
+  }
+
+  80% {
+    color: #484848;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #484848;
+    text-shadow: none;
+  }
+}
+
+ul li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+ul.pre-loader li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+ul.pre-loader li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+ul.pre-loader li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+ul.pre-loader li:nth-child(5) {
+  animation-delay: 1s;
+}
+
+ul.pre-loader li:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+ul.pre-loader li:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+@media screen and (max-width: 980px) {
+  ul.pre-loader li {
+    font-size: 30px;
+    letter-spacing: 0;
+  }
 }
