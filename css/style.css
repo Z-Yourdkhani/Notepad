@@ -1,147 +1,108 @@
-@font-face {
-    font-family: "dinar";
-    src: url("../font/Far_Dinar_Two_Medium.ttf");
-}
-
-body {
-    font-family: "dinar";
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    direction: rtl;
-}
-
-#message {
-    display: none;
-}
-
-#allNote li {
-    width: 100%;
-    text-shadow: #fc0 1px 0 10px;
-}
-
-#addNote,
-#inputNote {
-    height: 3rem;
-}
-
-.cursor-pointer {
-    cursor: pointer;
-}
-
-.color {
-    width: 25px;
-    height: 25px;
-    margin: 0 5px;
-    border-radius: 50%;
-    border: 1px solid #46abca;
-    cursor: pointer;
-}
-
-.newNoteClass {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95%;
-    margin-bottom: 10px;
-    padding: 10px 25px;
-    overflow: auto;
-    text-align: right;
-    border-radius: 4px;
-    color: black;
-    font-size: 0.9rem;
-    background: linear-gradient(45deg, rgb(255, 0, 0, 0.4), rgb(255, 166, 1, 0.4), rgb(255, 255, 0, 0.4), rgb(0, 128, 0, 0.4), rgb(0, 0, 255, 0.4), rgb(76, 0, 130, 0.4), rgb(246, 135, 246, 0.4), rgb(255, 1, 1, 0.4));
-}
-
-button {
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
-}
-
-input::placeholder {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
-
-input {
-    font-size: 0.9rem;
-}
-
-input[type="text"] {
-    outline: none;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    border-image-slice: 1;
-}
-
-ul.pre-loader li {
-    color: #484848;
-    display: inline;
-    font-size: 2em;
-    animation: pre-load 3s linear infinite;
-}
-
-@keyframes pre-load {
-    0% {
-        color: #484848;
-        text-shadow: none;
+    @font-face {
+        font-family: "dinar";
+        src: url("../font/Far_Dinar_Two_Medium.ttf");
     }
-    20% {
-        color: #484848;
-        text-shadow: none;
+    
+    body {
+        font-family: "dinar";
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        direction: rtl;
     }
-    40% {
-        color: #fff900;
-        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    
+    #message {
+        display: none;
     }
-    60% {
-        color: #484848;
-        text-shadow: none;
+    
+    #allNote li {
+        width: 100%;
+        text-shadow: #fc0 1px 0 10px;
     }
-    80% {
-        color: #484848;
-        text-shadow: none;
+    
+    #addNote,
+    #inputNote {
+        height: 3rem;
     }
-    100% {
-        color: #484848;
-        text-shadow: none;
+    
+    .cursor-pointer {
+        cursor: pointer;
     }
-}
-
-ul li:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-ul.pre-loader li:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-ul.pre-loader li:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-ul.pre-loader li:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-ul.pre-loader li:nth-child(5) {
-    animation-delay: 1s;
-}
-
-ul.pre-loader li:nth-child(6) {
-    animation-delay: 1.2s;
-}
-
-ul.pre-loader li:nth-child(7) {
-    animation-delay: 1.4s;
-}
-
-@media screen and (max-width: 980px) {
-    ul.pre-loader li {
-        font-size: 30px;
-        letter-spacing: 0;
+    
+    .color {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        border-radius: 50%;
+        border: 1px solid #46abca;
+        cursor: pointer;
     }
-}
+    
+    .newNoteClass {
+        list-style: none;
+        display: flex;
+        gap: 1;
+        justify-content: space-around;
+        align-items: end;
+        width: 95%;
+        margin-bottom: 10px;
+        padding: 10px;
+        overflow: auto;
+        text-align: right;
+        border-radius: 4px;
+        color: black;
+        font-size: 0.9rem;
+        background: linear-gradient(45deg, rgb(255, 0, 0, 0.4), rgb(255, 166, 1, 0.4), rgb(255, 255, 0, 0.4), rgb(0, 128, 0, 0.4), rgb(0, 0, 255, 0.4), rgb(76, 0, 130, 0.4), rgb(246, 135, 246, 0.4), rgb(255, 1, 1, 0.4));
+    }
+    
+    .newNoteClass p {
+        width: 85%;
+        margin-bottom: 0;
+    }
+    
+    .newNoteClass input {
+        width: 90%;
+    }
+    
+    #addNote {
+        background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    }
+    
+    input::placeholder {
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+    
+    input {
+        font-size: 0.9rem;
+    }
+    
+    input[type="text"] {
+        outline: none;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+        border-image-slice: 1;
+    }
+    
+    .edit-input {
+        width: calc(100% - 20px);
+        padding: 4px 6px;
+        border: none !important;
+    }
+    
+    .confirm-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 2px 5px;
+        font-size: small;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .fa-check {
+        font-size: 1.3rem !important;
+    }
